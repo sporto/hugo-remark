@@ -25,6 +25,14 @@ hugo new site /path/to/presentation
 cd /path/to/presentation
 ```
 
+### Install this theme
+
+Inside the presentation folder do:
+
+```bash
+git clone https://github.com/sporto/hugo-remark themes/remark
+```
+
 ### Generate new slides
 
 Inside the presentation folder do:
