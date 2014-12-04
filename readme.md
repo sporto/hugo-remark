@@ -1,0 +1,75 @@
+# Hugo Remark theme
+
+What is **hugo**?
+
+[Hugo](http://gohugo.io/) is a great static site generator built in Go.
+
+What is **remark.js**?
+
+[Remark](https://github.com/gnab/remark) is a simple slide show generator from markdown files.
+
+## About this theme
+
+This theme creates a remark presentation using Hugo to concatenate and serve the files.
+
+## Installation
+
+Follow the hugo [installation intructions](http://gohugo.io/). On mac simply do `brew install hugo`
+
+## How to use
+
+### Generating the site
+
+```bash
+hugo new site /path/to/presentation
+cd /path/to/presentation
+```
+
+### Generate new slides
+
+Inside the presentation folder do:
+
+```bash
+hugo new 010.md
+```
+
+Note that this theme will just put slides in alphabetic order, so name them something like 010, 020, 030...
+
+Slides will be created on `./content`.
+Edit the slides using markdown.
+
+### Service the slideshow
+
+To show your slides run:
+
+```bash
+hugo server --theme=remark  --buildDrafts --watch
+```
+
+And open the given url in a browser, e.g. http://localhost:1313
+
+### Custom styles
+
+You can add custom styles to your slides:
+
+- Create a file `./layouts/partials/custom_head.html`
+- In this file add a link to a CSS style sheet e.g.
+  `<link rel="stylesheet" href="/css/custom.css" />`
+- Add your CSS in `./static/css/custom.css`
+
+### Custom JS on the head
+
+- Create a file `./layouts/partials/custom_head.html`
+- In this file add a link to the JS libraries you want to load e.g.
+  `<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>`
+  `<script src="/js/custom.js"></script>`
+- Add your JS in `./static/js/custom.js`
+
+### Custom JS on the footer
+
+You can also add custom JS on the footer, this is loaded after the remark initialisation. This is useful for adding custom behaviour.
+
+- Create a file `./layouts/partials/custom_footer.html`
+- Add a JS script link there or just write the JS using `script` tags
+
+
