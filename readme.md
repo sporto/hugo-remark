@@ -38,7 +38,7 @@ Note that this theme will just put slides in alphabetic order, so name them some
 Slides will be created on `./content`.
 Edit the slides using markdown.
 
-### Service the slideshow
+### Serve the slideshow
 
 To show your slides run:
 
@@ -46,7 +46,7 @@ To show your slides run:
 hugo server --theme=remark  --buildDrafts --watch
 ```
 
-And open the given url in a browser, e.g. http://localhost:1313
+And open the given url in a browser, e.g. `http://localhost:1313`
 
 ### Custom styles
 
@@ -54,20 +54,22 @@ You can add custom styles to your slides:
 
 - Create a file `./layouts/partials/custom_head.html`
 - In this file add a link to a CSS style sheet e.g.
-  `<link rel="stylesheet" href="/css/custom.css" />`
-- Add your CSS in `./static/css/custom.css`
+  `<link rel="stylesheet" href="/css/[some-name].css" />`
+- Add your CSS in `./static/css/[some-name].css`
+- Or just write your CSS in this file using `style` tags.
 
 ### Custom JS on the head
 
 - Create a file `./layouts/partials/custom_head.html`
 - In this file add a link to the JS libraries you want to load e.g.
   `<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>`
-  `<script src="/js/custom.js"></script>`
-- Add your JS in `./static/js/custom.js`
+  `<script src="/js/[some-name].js"></script>`
+- Add your JS in `./static/js/[some-name].js`
+
 
 ### Custom JS on the footer
 
-You can also add custom JS on the footer, this is loaded after the remark initialisation. This is useful for adding custom behaviour.
+You can also add custom JS on the footer, this is loaded after the remark initialisation. This is useful for adding custom behaviour to your presentation.
 
 - Create a file `./layouts/partials/custom_footer.html`
 - Add a JS script link there or just write the JS using `script` tags
