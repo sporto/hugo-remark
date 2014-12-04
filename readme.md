@@ -12,6 +12,16 @@ What is **remark.js**?
 
 This theme creates a remark presentation using Hugo to concatenate and serve the files.
 
+## Why use Hugo and not just remark.js?
+
+Remark.js doesn't come with a way of serving files or reload them on changes. Also it requires you to write all your slides on just one html page.
+
+By using Hugo:
+
+- You can serve your slideshows on localhost easily
+- Hugo will watch for changes and reload immediatelly
+- You can write your slides on different markdown files, Hugo will concatenate them
+
 ## Installation
 
 Follow the hugo [installation intructions](http://gohugo.io/). On mac simply do `brew install hugo`
