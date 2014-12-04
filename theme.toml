@@ -1,0 +1,6 @@
+author = "Sebastian Porto"
+description = "A Hugo theme for creating remark slideshows"
+license = "MIT"
+name = "remark"
+source_repo = ""
+tags = ["", ""]
