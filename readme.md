@@ -51,7 +51,14 @@ Inside the presentation folder do:
 hugo new 010.md
 ```
 
-Note that this theme will just put slides in alphabetic order, so name them something like 010, 020, 030...
+Note that this theme will just put slides in alphabetic order by their __title__, so name them something like 010, 020, 030...
+
+e.g.
+```
++++
+title = "010"
++++
+```
 
 Slides will be created on `./content`.
 Edit the slides using markdown.
