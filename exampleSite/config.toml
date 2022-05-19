@@ -1,0 +1,6 @@
+baseURL = "http://example.org/"
+languageCode = "en-gb"
+title = "Example Hugo Site with Slides"
+
+[markup.goldmark.renderer]
+unsafe = true
