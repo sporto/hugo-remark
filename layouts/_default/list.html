@@ -2,7 +2,7 @@
 <div class="slides">
   <h2>{{ .Title }}:</h2>
   <ul>
-    {{ range .RegularPages }}
+    {{ range sort .Pages "Title" "asc" }}
     <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
     {{ end }}
   </ul>

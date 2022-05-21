@@ -1,5 +1,5 @@
 <ul>
-    {{ range .Sections }}
+    {{ range sort .Sections "CurrentSection.Title" "asc" }}
         <li>
             <a href="{{ .Permalink }}">{{ .CurrentSection.Title }} </a>
                 {{ partial "slide-recurse" . }}
