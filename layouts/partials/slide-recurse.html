@@ -1,0 +1,8 @@
+<ul>
+    {{ range .Sections }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .CurrentSection.Title }} </a>
+                {{ partial "slide-recurse" . }}
+        </li>
+    {{ end }}
+</ul>
