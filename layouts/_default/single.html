@@ -1,6 +1,6 @@
 {{ define "main" }}
     <textarea id="source">
-        {{ .RawContent }}
+        {{- .RawContent -}}
     </textarea>
     {{ partial "remarkify.html" . }} 
 {{ end }}
