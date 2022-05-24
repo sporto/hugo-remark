@@ -10,7 +10,7 @@ What is **remark.js**?
 
 ## About this theme
 
-This theme creates a set of presentations using hugo to generate a set of slideshows generated from markdown content.
+This theme creates a set of Remark presentations using Hugo. Hugo generates slideshow from markdown content.
 
 ## Why use Hugo and not just remark.js?
 
@@ -24,7 +24,7 @@ By using Hugo:
 
 ## Installation
 
-Follow the hugo [installation intructions](http://gohugo.io/). On mac simply do `brew install hugo`
+Follow the hugo [installation intructions](https://gohugo.io/getting-started/installing/).
 
 ## How to use
 
