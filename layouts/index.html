@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html>
-	{{ partial "head.html" . }}
-	<body>
-		{{ partial "slides.html" . }}
-		{{ partial "footer.html" . }}
-	</body>
-</html>
+{{ define "main" }}
+	{{ .Content | markdownify }}
+	
+	<div class="slides">
+		<h2>Slideshow Directories:</h2>
+		{{ partial "slide-list" . }}
+	</div>
+{{ end }}

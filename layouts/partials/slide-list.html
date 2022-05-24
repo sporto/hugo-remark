@@ -1,0 +1,10 @@
+<nav>
+    <ul>
+        {{ range sort .Site.Sections "Title" "asc" }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                {{ partial "slide-recurse" . }}
+            </li>
+        {{ end }}
+    </ul>
+</nav>
