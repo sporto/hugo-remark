@@ -1,6 +1,8 @@
 baseURL = "http://example.org/"
 languageCode = "en-gb"
 title = "Example Hugo Site with Slides"
+theme = "hugo-remark"
+themesdir = "../.."
 
 [markup.goldmark.renderer]
 unsafe = true

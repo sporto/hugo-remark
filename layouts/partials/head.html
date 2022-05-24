@@ -4,8 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
 
-  <!-- Styles -->
-  {{ $sass := resources.Get "sass/main.scss" | resources.ToCSS }}
-  <link rel="stylesheet" href="{{ $sass.RelPermalink }}" />
+  <link rel="stylesheet" href="{{ "css/remark.css" | absURL }}" />
 
 </head>
