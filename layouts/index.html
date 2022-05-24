@@ -2,7 +2,15 @@
 	{{ .Content | markdownify }}
 
 	<div class="slides">
-		<h2>Slideshow Directories:</h2>
-		{{ partial "slide-list" . }}
+		<h2>Slideshows:</h2>
+		<nav>
+			<ul>
+				{{ range .Pages }}
+					<li>
+						<a href="{{.Permalink}}">{{.Title}}</a>
+					</li>
+				{{ end }}
+			</ul>
+		</nav>
 	</div>
 {{ end }}
